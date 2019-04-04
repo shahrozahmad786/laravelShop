@@ -47,12 +47,12 @@
                 <thead>
                 <tr>
                   <th>Sr.No</th>
-                <th>Product Name</th>
+                <th>Category Name</th>
               
                 </tr>
                 </thead>
                 <tbody>
-                 @foreach( $products as $product)
+                 @foreach( $categories as $category)
 
                 <tr>
                     <td>{{$product->id}}</td>
@@ -69,9 +69,10 @@
           
                 <tfoot>
                 <tr>
-
+   
                 <th>Sr.No</th>
-                <th>Product Name</th>
+                <th>Category Name</th>
+              
          
                 </tr>
                 </tfoot>

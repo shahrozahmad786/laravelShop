@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Profile extends Model
 {
    use SoftDeletes;
+   protected $guarded= [];
     protected $dates=['deleted_at'];
 
 }

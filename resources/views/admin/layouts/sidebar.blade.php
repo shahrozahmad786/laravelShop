@@ -5,52 +5,54 @@
 
  <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="{{URL('panel-admin')}}">
+          <li class="nav-item @if(request()->url() ==route('admin.panel-admin')) {{'active'}} @endif">
+            <a class="nav-link "  href="{{route('admin.panel-admin')}}">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
+         
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="categories">
-              <i class="material-icons">category</i>
-              <p>Categories</p>
-            </a>
-          </li>
+ 
 
  
-          <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-product')}}">
+          <li class="nav-item @if(request()->url() ==route('admin.product.index')) {{'active'}} @endif">
+       
+
+        <a class="nav-link" href="{{route('admin.product.index')}}">
               <i class="material-icons">label</i>
               <p>Products</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-deals')}}">
+
+          <li class="nav-item
+           @if(request()->url() ==route('admin.category.index')) {{'active'}} @endif" >
+
+
+            <a class="nav-link" href="{{route('admin.category.index')}}">
               <i class="material-icons">person</i>
-              <p>Deals</p>
+              <p>Categories</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-exports')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">bubble_chart</i>
               <p>Exports</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-tvc')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">location_ons</i>
               <p>TVC</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-ingredients')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">location_ons</i>
               <p>Ingredients</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-career')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">language</i>
               <p>Carrer</p>
             </a>
@@ -58,13 +60,13 @@
 
 
               <li class="nav-item ">
-            <a class="nav-link" href="{{URL('admin-image')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">language</i>
               <p>Images</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{URL('admin-contact')}}">
+            <a class="nav-link" href="">
               <i class="material-icons">unarchive</i>
               <p>Contact</p>
             </a>

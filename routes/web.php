@@ -19,12 +19,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/profile', 'ProfileController');
-Route::resource('/product', 'ProductController');
-Route::resource('/order', 'OrderController');
 
 
+
+
+
+
+
+
+Route::group(['as' =>'admin.'],function(){
 // admin
 Route::get('panel-admin','admin\AdminController@index')->name('panel-admin');
 
-// Route::get('admin-product','admin\AdminController@index')->name('panel-admin');
+Route::resource('/product','ProductController');
+Route::resource('/category','CategoryController');
+});

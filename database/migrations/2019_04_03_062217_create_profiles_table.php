@@ -19,7 +19,7 @@ class CreateProfilesTable extends Migration
             $table->string('name')->nullable();
             $table->text('address')->nullable();
             $table->integer('phone')->nullable();
-            $table->string('slug')->unique()->nullable();
+            $table->string('slug')->nullable();
 
 
             $table->timestamps();

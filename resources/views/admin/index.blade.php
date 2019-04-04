@@ -8,7 +8,6 @@
 <div class="main-panel">
 <div class="content">
 
-
   <div class="advance-table">
         <h3 class="h2">DASHBOARD</h3>
         @if(Session::has('message'))
@@ -23,7 +22,7 @@
             <strong><i class="fa fa-check"></i>Success!</strong> Products deleted successfully.
         </div>
 
-
+   
 @endsection
 
 
